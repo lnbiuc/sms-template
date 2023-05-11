@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Notification</title>
+  <style>
+    body {
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      width: 600px;
+      margin: 30px auto;
+      padding: 40px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      text-align: center;
+      margin: 100px 0;
+
+    }
+
+    .link {
+      font-size: 36px;
+      font-weight: bold;
+      color: #e74c3c;
+      text-align: center;
+    }
+
+    .warning {
+      color: #999;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .copyright {
+      color: dodgerblue;
+      text-decoration: none;
+    }
+
+    .title {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">
+        <span style="color: dodgerblue">
+            {{domain}}
+        </span>
+    Notification
+  </h1>
+  <p style="font-size: 18px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Hi, {{name1}}, The user {{name2}} whom you are subscribed to, has send a new {{type}}.</p>
+  <p class="content">
+    <a class="link" href="{{link}}">Check it out now!</a>
+  </p>
+  <p class="warning">If you did not make this request, please ignore this email.</p>
+  <div class="footer">
+    Copyright © 2023 · <a class="copyright" href="https://vio.vin/index">Violet</a> ·
+    <a class="copyright"  href="https://beian.miit.gov.cn/">陕ICP备2021015553号-1</a>
+  </div>
+</div>
+</body>
+</html>

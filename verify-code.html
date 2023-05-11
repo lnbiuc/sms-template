@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Verification Code</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .code {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 70px 0;
+            text-align: center;
+        }
+
+        .warning {
+            color: #999;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+        .title {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">
+        <span style="color: dodgerblue">
+            {{domain}}
+        </span>
+        Verification Code Email
+    </h1>
+    <p>You are using email for account verification.</p>
+    <p>Your verification code is as follows.</p>
+    <p class="code">{{code}}</p>
+    <p class="warning">If you did not make this request, please ignore this email.</p>
+    <p>The code is valid for 15 minutes.</p>
+    <div class="footer">
+        Copyright © 2023 · <a href="https://vio.vin/index">Violet</a> ·
+        <a href="https://beian.miit.gov.cn/">陕ICP备2021015553号-1</a>
+    </div>
+</div>
+</body>
+</html>
